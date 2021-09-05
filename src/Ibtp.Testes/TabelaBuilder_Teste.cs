@@ -1,4 +1,4 @@
-﻿using Ibtp.Core.Servicos;
+﻿using Ibtp.Core.Repositorios;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Ibtp.Testes
@@ -9,12 +9,12 @@ namespace Ibtp.Testes
         [TestMethod]
         public void Importar_Teste()
         {
-            var servico = (TabelaServico)ServiceProvider.GetService(typeof(TabelaServico));
+            var servico = (IIbptRepositorio)ServiceProvider.GetService(typeof(IIbptRepositorio));
 
             var lista = servico.TabelaIbpt;
             Assert.IsTrue(lista.Count > 0);
 
-            var aliquota = servico.BuscarAliquota("27101932");
+            var aliquota = servico.ObterPorNcm("27101932", Core.Tipos.eUF.RJ);
             Assert.IsNotNull(aliquota);
             Assert.IsNotNull(aliquota.Vigencia);
             Assert.IsNotNull(aliquota.Descricao);

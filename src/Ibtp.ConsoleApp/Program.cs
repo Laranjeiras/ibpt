@@ -1,6 +1,10 @@
-﻿using Ibtp.Core.Servicos;
+﻿using Ibtp.Core.Modelos;
+using Ibtp.Core.Repositorios;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 
 namespace Ibtp.ConsoleApp
 {
@@ -8,8 +12,6 @@ namespace Ibtp.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var csv = @"E:\Downloads\11367874000106\TabelaIBPTaxRJ21.2.C.csv";
-
             var before0 = GC.CollectionCount(0);
             var before1 = GC.CollectionCount(1);
             var before2 = GC.CollectionCount(2);
@@ -17,9 +19,9 @@ namespace Ibtp.ConsoleApp
             Stopwatch sw = new();
             sw.Start();
 
-            var servico = new TabelaServico(csv, "21.2", Core.Tipos.eUF.RJ);
+            IIbptRepositorio servico = new IbptCsvRepositorio(@"E:\Downloads\tabela-ibpt-21_2_A", "21.2");
 
-            var lista = servico.TabelaIbpt;
+            var lista = servico.ObterTabelaPorUF(Core.Tipos.eUF.RJ);
 
             sw.Stop();
             var tempo = sw.Elapsed;

@@ -1,5 +1,7 @@
-﻿using Ibtp.Core.Servicos;
+﻿using Ibtp.Core.Repositorios;
 using Microsoft.Extensions.DependencyInjection;
+using System.IO;
+using System.Linq;
 
 namespace Ibtp.Testes
 {
@@ -10,8 +12,10 @@ namespace Ibtp.Testes
         public ContainerDI()
         {
             var services = new ServiceCollection();
-            var csv = @"E:\Downloads\11367874000106\TabelaIBPTaxRJ21.2.C.csv";
-            services.AddSingleton<TabelaServico>(x => new TabelaServico(csv, "21.2", Core.Tipos.eUF.RJ));
+
+            var diretorio = Directory.GetFiles(@"E:\Downloads\tabela-ibpt-21_2_A").ToList();
+            services.AddSingleton<IIbptRepositorio>(x => new IbptCsvRepositorio(@"E:\Downloads\tabela-ibpt-21_2_A", "21.2"));
+
             ServiceProvider = services.BuildServiceProvider();
         }
     }
