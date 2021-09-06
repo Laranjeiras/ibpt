@@ -10,7 +10,7 @@ on:
 jobs:
   pack-push:
     env:
-      PROJECT_PATH: ./src/Ibpt.Core/Ibtp.Core.csproj
+      PROJECT_PATH: ./src/Ibtp.Core/Ibpt.Core.csproj
 
     runs-on: ubuntu-latest
 
