@@ -10,7 +10,7 @@ on:
 jobs:
   pack-push:
     env:
-      PROJECT_PATH: ./FiscalCore/FiscalCore.csproj     
+      PROJECT_PATH: ./src/Ibpt.Core/Ibtp.Core.csproj
 
     runs-on: ubuntu-latest
 
