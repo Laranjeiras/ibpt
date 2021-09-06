@@ -30,4 +30,4 @@ jobs:
     - name: Push to NuGet
       run: |
         cd out
-        dotnet nuget push *.nupkg --api-key ${{ secrets.API_KEY }} --source 'https://api.nuget.org' --skip-duplicate      
+        dotnet nuget push *.nupkg --api-key ${{ secrets.API_KEY }} --source 'https://www.nuget.org/api/v2/package' --skip-duplicate      
