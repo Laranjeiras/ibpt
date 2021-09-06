@@ -1,9 +1,9 @@
-﻿using Ibtp.Core.Modelos;
-using Ibtp.Core.Tipos;
+﻿using Ibpt.Core.Modelos;
+using Ibpt.Core.Tipos;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Ibtp.Core.Repositorios
+namespace Ibpt.Core.Repositorios
 {
     public abstract class IbptRepositorio: IIbptRepositorio
     {

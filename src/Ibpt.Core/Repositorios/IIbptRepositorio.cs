@@ -1,8 +1,8 @@
-﻿using Ibtp.Core.Modelos;
-using Ibtp.Core.Tipos;
+﻿using Ibpt.Core.Modelos;
+using Ibpt.Core.Tipos;
 using System.Collections.Generic;
 
-namespace Ibtp.Core.Repositorios
+namespace Ibpt.Core.Repositorios
 {
     public interface IIbptRepositorio
     {

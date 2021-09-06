@@ -1,12 +1,12 @@
-﻿using Ibtp.Core.Modelos;
-using Ibtp.Core.Repositorios;
+﻿using Ibpt.Core.Modelos;
+using Ibpt.Core.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
-namespace Ibtp.ConsoleApp
+namespace Ibpt.ConsoleApp
 {
     class Program
     {

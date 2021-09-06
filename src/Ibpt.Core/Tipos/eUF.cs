@@ -1,4 +1,4 @@
-﻿namespace Ibtp.Core.Tipos
+﻿namespace Ibpt.Core.Tipos
 {
     public enum eUF
     {

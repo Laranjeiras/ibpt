@@ -1,7 +1,7 @@
-﻿using Ibtp.Core.Tipos;
+﻿using Ibpt.Core.Tipos;
 using System;
 
-namespace Ibtp.Core.Modelos
+namespace Ibpt.Core.Modelos
 {
     public class Item
     {

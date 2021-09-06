@@ -1,6 +1,6 @@
-﻿using Ibtp.Core.Tipos;
+﻿using Ibpt.Core.Tipos;
 
-namespace Ibtp.Core.Modelos
+namespace Ibpt.Core.Modelos
 {
     public class Imposto
     {

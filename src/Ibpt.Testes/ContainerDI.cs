@@ -1,9 +1,9 @@
-﻿using Ibtp.Core.Repositorios;
+﻿using Ibpt.Core.Repositorios;
 using Microsoft.Extensions.DependencyInjection;
 using System.IO;
 using System.Linq;
 
-namespace Ibtp.Testes
+namespace Ibpt.Testes
 {
     public abstract class ContainerDI
     {

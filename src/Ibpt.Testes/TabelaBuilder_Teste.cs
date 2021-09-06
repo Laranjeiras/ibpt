@@ -1,7 +1,7 @@
-﻿using Ibtp.Core.Repositorios;
+﻿using Ibpt.Core.Repositorios;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Ibtp.Testes
+namespace Ibpt.Testes
 {
     [TestClass]
     public class TabelaBuilder_Teste : ContainerDI
